@@ -126,6 +126,7 @@ To access the various Web-UIs you can use the following links
 | Fuse in Datacenter | http://localhost:8181/hawtio/login | admin / change12_me
 | Fuse on Gateway | http://localhost:8182/hawtio/login | admin / change12_me
 | BPM Suite | http://localhost:8080/business-central/kie-wb.html | psteiner / change12_me
+| phpPgAdmin for Postgres | http://localhost/phpPgAdmin/ | psteiner / change12_me
 |==================================
 
 === Deploy BPM Process
