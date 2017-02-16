@@ -42,7 +42,7 @@
          - copy_applications
 
       - name: Copy JBoss Fuse if exists
-        copy: src=./../software/jboss-fuse-full-6.2.1.redhat-084.zip dest=../IoT_Demo_Datacenter/Fuse/Docker_Files/software/
+        copy: src=./../software/jboss-fuse-karaf-6.3.0.redhat-187.zip dest=../IoT_Demo_Datacenter/Fuse/Docker_Files/software/
         tags:
          - copy_applications
 
