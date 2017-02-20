@@ -56,8 +56,10 @@ bpm:
         hostname: bpm
         expose:
                - 8080
+               - 9418
         ports:
                - 8080:8080
+               - 9418:9418
         links:
                - receiver
                - jdg
