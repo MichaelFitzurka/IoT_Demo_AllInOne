@@ -124,14 +124,3 @@ rulescep:
       privileged: true
       volumes:
                - ./IoT_Demo_Gateway/Rules_CEP/target:/home/psteiner/target
-
-#zeppelin:
-#        build: ./IoT_Demo_Datacenter/zeppelin
-#        hostname: zeppelin
-#        expose:
-#               - 8080
-#        ports:
-#               - 7070:8080
-#        privileged: true
-#        volumes:
-#               - ~/IoT_Demo_Datacenter/.m2/repository:/home/psteiner/.m2/repository
