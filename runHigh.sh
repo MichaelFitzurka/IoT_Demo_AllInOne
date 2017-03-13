@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export deviceType="temperature"
+export deviceType="Temperature"
 export deviceID="4711"
 export initialValue="30"
 export count="1"

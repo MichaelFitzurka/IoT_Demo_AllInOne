@@ -50,6 +50,13 @@
         tags:
          - copy_applications
 
+      - name: Build DataSet helper class
+        shell: "mvn clean install >> ../../somelog.txt"
+        args:
+          chdir: ../IoT_Demo_Datacenter/DataSet
+        tags:
+         - maven_builds
+
       - name: Build Software Sensor
         shell: "mvn clean install >> ../../somelog.txt"
         args:
