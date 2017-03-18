@@ -11,7 +11,7 @@
       - name: Clone Smart Datacenter code from github
         git: repo=https://github.com/PatrickSteiner/IoT_Demo_Datacenter.git
              dest=./../IoT_Demo_Datacenter force=yes
-             version=GuidedDecisionTable
+             version=master
         tags:
          - github
 
