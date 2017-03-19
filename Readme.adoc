@@ -68,12 +68,12 @@ Checking connectivity... done.
 ==== Provide Red Hat JBoss Products
 You will have to copy the following products into their needed location
 
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=37393[JBoss EAP 6.4.0] into directory `./software/`
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=42471[JBoss EAP Patch 6.4.6] into directory `./software/`
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=41161[JBoss BPM Suite] into directory `./software/`
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=48541[JBoss Fuse on Karaf] into directory `./software/`
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=42191[JBoss DataGrid] into directory `./software/`
- * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=42331[JBoss Data Grid 6.6.0 Library Module for JBoss EAP 6] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=43891[JBoss EAP V7.0.0] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=47721[JBoss EAP Patch V7.0.3] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=48441[JBoss BPM Suite V6.4.0] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=46901[JBoss Fuse on Karaf V6.3.0] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=45511[JBoss DataGrid V7.0.0] into directory `./software/`
+ * https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=45561[JBoss Data Grid V7.0.0 Library Module for JBoss EAP V7] into directory `./software/`
 
 
 === Building the All-In-One Demo
