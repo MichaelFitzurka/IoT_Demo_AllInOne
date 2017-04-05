@@ -22,6 +22,11 @@ receiver:
                 - "61616:61616"
         links:
                 - postgres
+        environment:
+                - INFLUXDASHBOARD=TRUE
+                - INFLUXHOST=localhost
+                - INFLUXPORT=8086
+                - INFLUXURI=write?db=IoT_Demo
         privileged: true
         volumes:
                 - ./IoT_Demo_Datacenter/receiver/target:/home/psteiner/fuse/deploy
