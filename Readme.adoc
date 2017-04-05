@@ -26,6 +26,11 @@ Red Hat JBoss products, each taking over an important part in the IoT landscape
 
 image::pictures/Overview.png[]
 
+In addition, you can run another element of this IoT-Demo, a https://github.com/PatrickSteiner/IoT_Demo_Dashboard[Dashboard], made with
+https://www.influxdata.com/[InfluxDB] and https://grafana.com/[Grafana]
+
+image::pictures/Overview_with_Dashboard.png[]
+
 === Hardware requirements
 As this setup consists of 7 running containers, each hosting a full-blown version
 of a Red Hat JBoss product, you will want to run it on at least
@@ -99,6 +104,20 @@ So in those envs, you have to issue the following command and type in your crede
 $ ansible-playbook demo_root.yml --ask-become-pass
 ```
 
+== Configure the environment
+In general this demo is build so you do not need to do anything, *unless you
+integrate the https://github.com/PatrickSteiner/IoT_Demo_Dashboard[Dashboard]*.
+In this case you have to change the file `IoT_Demo_AllInOne/docker-compose.yml`.
+
+In the section `receiver`, you will have to change the two values
+
+ * `INFLUXDASHBOARD=FALSE` to `INFLUXDASHBOARD=TRUE`
+ * `INFLUXHOST=<your dashboard IP>` to the IP address of your server running the https://github.com/PatrickSteiner/IoT_Demo_Dashboard[Dashboard] logic.
+
+[NOTE]
+====
+Do not alter any other values, as this will break the demo!
+====
 
 == Start Environment
 Starting the IoT All-In-One demo is  a manual step.

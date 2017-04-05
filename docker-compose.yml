@@ -11,8 +11,8 @@ receiver:
                 - "4711:4711"
                 - "61616:61616"
         environment:
-                - INFLUXDASHBOARD=TRUE
-                - INFLUXHOST=ec2-35-165-48-201.us-west-2.compute.amazonaws.com
+                - INFLUXDASHBOARD=FALSE
+                - INFLUXHOST=<your dashboard IP>
                 - INFLUXPORT=8086
                 - INFLUXURI=write?db=IoT_Demo
         privileged: true
