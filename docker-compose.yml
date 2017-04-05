@@ -1,14 +1,4 @@
 # Containers running in the Datacenter
-postgres:
-        build: ./IoT_Demo_Datacenter/Postgres
-        hostname: postgres
-        expose:
-                - 5432
-                - 80
-        ports:
-                - "80:80"
-                - "5432:5432"
-
 receiver:
         build: ./IoT_Demo_Datacenter/receiver
         hostname: receiver
@@ -20,11 +10,9 @@ receiver:
                 - "8181:8181"
                 - "4711:4711"
                 - "61616:61616"
-        links:
-                - postgres
         environment:
                 - INFLUXDASHBOARD=TRUE
-                - INFLUXHOST=localhost
+                - INFLUXHOST=ec2-35-165-48-201.us-west-2.compute.amazonaws.com
                 - INFLUXPORT=8086
                 - INFLUXURI=write?db=IoT_Demo
         privileged: true
