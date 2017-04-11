@@ -17,6 +17,7 @@ public class App
     private static final String DEFAULT_UNIT		 	= "C";
     private static final String DEFAULT_WAIT		 	= "1";
     private static final String DEFAULT_RECEIVER		= "localhost";
+    private static final String DEFAULT_RECEIVER_PORT	= "1883";
     private static final String DEFAULT_BROKER_UID		= "admin";
     private static final String DEFAULT_BROKER_PASSWD 	= "change12_me";
 
@@ -33,7 +34,7 @@ public class App
         int count 		 	  = Integer.parseInt(System.getProperty("count", DEFAULT_COUNT));
         int waitTime 		  = Integer.parseInt(System.getProperty("waitTime", DEFAULT_WAIT));
         String unit			  = System.getProperty("payloadUnit", DEFAULT_UNIT);
-        String brokerURLMQTT  = "tcp://" + System.getProperty("receiverURL",DEFAULT_RECEIVER) +  ":1883";
+        String brokerURLMQTT  = "tcp://" + System.getProperty("receiverURL",DEFAULT_RECEIVER) +  ":" + System.getProperty("receiverURLPort",DEFAULT_RECEIVER_PORT);
         String brokerUID 	  = System.getProperty("brokerUID", DEFAULT_BROKER_UID);
         String brokerPassword = System.getProperty("brokerPassword", DEFAULT_BROKER_PASSWD);
         
