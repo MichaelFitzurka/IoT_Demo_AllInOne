@@ -6,7 +6,7 @@ export initialValue="20"
 export count="50"
 export waitTime="1"
 export receiverURL="localhost"
-receiverURLPort="1883"
+export receiverURLPort="1883"
 export brokerUID="admin"
 export brokerPassword="change12_me"
 
