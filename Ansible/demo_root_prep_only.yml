@@ -2,7 +2,7 @@
   hosts: demos
   connection: local
   tasks:
-      - name: Clone Sensor code from github
+      - name: Clone Business Rules code from github
         git: repo=https://github.com/MichaelFitzurka/IoT_Demo_BusinessRules.git
              dest=./../IoT_Demo_BusinessRules force=yes
         tags:

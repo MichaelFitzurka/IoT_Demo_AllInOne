@@ -11,6 +11,7 @@
 *.log
 *.txt
 
+.project
 target
 IoT_Demo_BusinessRules
 IoT_Demo_Datacenter
