@@ -33,7 +33,7 @@
          - copy_applications
 
       - name: Copy JBoss EAP patch for Datacenter images if exists
-        copy: src=./../software/jboss-eap-7.0.5-patch.zip dest=../IoT_Demo_Datacenter/bpm/Docker_Files/software/
+        copy: src=./../software/jboss-eap-7.0.3-patch.zip dest=../IoT_Demo_Datacenter/bpm/Docker_Files/software/
         tags:
          - copy_applications
 
@@ -123,7 +123,7 @@
 
 
       - name: Build Docker base image
-        command: docker build --rm -t psteiner/base .
+        shell: "docker build --rm -t psteiner/base . >> ../../somelog.txt"
         args:
           chdir: ../IoT_Demo_Datacenter/Base
         become: true
@@ -131,7 +131,7 @@
          - docker_images
 
       - name: Build Docker Fuse
-        command: docker build --rm -t psteiner/fuse .
+        shell: "docker build --rm -t psteiner/fuse . >> ../../somelog.txt"
         args:
           chdir: ../IoT_Demo_Datacenter/Fuse
         become: true

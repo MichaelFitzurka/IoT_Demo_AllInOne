@@ -67,7 +67,7 @@
 
 
       - name: Build Docker base image
-        command: docker build --rm -t psteiner/base .
+        shell: "docker build --rm -t psteiner/base . >> ../../somelog.txt"
         args:
           chdir: ../IoT_Demo_Datacenter/Base
         become: true
@@ -75,7 +75,7 @@
          - docker_images
 
       - name: Build Docker Fuse
-        command: docker build --rm -t psteiner/fuse .
+        shell: "docker build --rm -t psteiner/fuse . >> ../../somelog.txt"
         args:
           chdir: ../IoT_Demo_Datacenter/Fuse
         become: true
