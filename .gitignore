@@ -12,6 +12,7 @@
 *.txt
 
 target
+IoT_Demo_BusinessRules
 IoT_Demo_Datacenter
 IoT_Demo_Gateway
 IoT_Demo_Sensors
